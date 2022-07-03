@@ -1,0 +1,26 @@
+Creating a blog project using MERN (MongoDB, ExpressJS, ReactJS, NodeJS)
+MongoDB - is a database which stores documents in collections. (in mongodb collections means an array of object,while the documet means the indivdual object)
+NodeJS - is a javascript engine originally built for browser now can work without a browser and having some extra APIs.
+And also use to run the javascript outside the browser.
+ExpressJS - is a server use for production purpose.Also is a framework for NodeJS which helps to ease the process. (framework 
+means an inbuilt layout, library so an express js server is an inbuilt node.js server )
+ReactJS - is a javascript library for building frontend development (user interfaces), (library are like where the functions and predefined methods are stored).
+In this project we are using redux to handle the authentication state, MongoDB to handle database operations, mongoose to handle the relations
+between the multiple collections.
+Relations between collections
+. Each User have can have a multiple blogs which (an array or collections)
+. Each blog Belongs to Only Single User (only one user can be allow to own a blog in which another user can't use)
+Application Parts
+BACKEND: NodeJS, MongoDB, ExpressJS, JWT(Json Web Token), BcryptJS
+FRONTEND: ReactJS, Redux, React Router, Axios, MaterialUI
+DEPENDENCIES FOR BACKEND:
+1. First Installation of Nodemon: Is use in for file changes in a file
+2. Installation for expresss js for fast and easy process on the node.js
+3. Installation of Mongoose for the connection of our application and mongodb
+4. Installation of BcryptJS for the encryption of our password (protection against fruad bad hackers so bcryptjs will encode our password)
+5. Installation of CORS for the access of xtmlhttprequest to the frontend
+DEPENDENCIES FOR FRONTEND:
+1. First Installation of React-Router-Dom: For linking of the two or more components together to work as one 
+2. Installation of React-Redux: Will be the one storing of our datas to the user interfaces
+3. Installation of Axios to use the request from the frontend to the backend or fetching of the request from frontend to backend
+
