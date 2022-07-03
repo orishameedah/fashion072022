@@ -23,7 +23,7 @@ const AddBlog = () => {
   }));
   }
   const sendRequest = async () => {
-    const res = await axios.post("http://localhost:5000/api/blog/add",{
+    const res = await axios.post("https://fashion-blog-backend.herokuapp.com/api/blog/add",{
       title: inputs.title,
       description: inputs.description,
       image: url,  //the url which is d url of the image

@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const id = localStorage.getItem("userId");
   const sendRequest = async () =>{
     const res = await axios
-    .get(`http://localhost:5000/api/blog/user/${id}`)
+    .get(`https://fashion-blog-backend.herokuapp.com/api/blog/user/${id}`)
     .catch(error=>console.log(error))
     const data = await res.data;
     return data

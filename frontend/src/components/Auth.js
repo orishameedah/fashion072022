@@ -23,7 +23,7 @@ const Auth = () => {
         }));
     };
     const sendRequest = async (type="login") => {
-       const res = await axios.post(`http://localhost:5000/api/user/${type}`, {//it will be a post request becos the login and signup is a post request
+       const res = await axios.post(`https://fashion-blog-backend.herokuapp.com/api/user/${type}`, {//it will be a post request becos the login and signup is a post request
             name: inputs.name,
             email: inputs.email,    //the json request and inputs which we need to send to the backend
             password: inputs.password

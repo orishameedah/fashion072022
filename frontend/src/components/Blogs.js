@@ -6,7 +6,7 @@ import Blog from './Blog';
 const Blogs = () => {
   const [blogs, setBlogs] = useState()
   const sendRequest = async () => {
-    const res = await axios.get("http://localhost:5000/api/blog") 
+    const res = await axios.get("https://fashion-blog-backend.herokuapp.com/api/blog") 
     .catch(error=>console.log(error));  
     const data = await res.data;
     return data;
