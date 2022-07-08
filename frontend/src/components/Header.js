@@ -46,13 +46,7 @@ const Header = () => {
               color="warning">
                 Login
             </Button>
-            <Button 
-              LinkComponent={Link} to="/auth"
-              variant='contained' 
-              sx={{margin: 1, borderRadius: 10}} 
-              color="warning">
-                Signup
-            </Button> 
+            
             </>} 
             { isLoggedIn && (
             <Button    //isLoggedIn meaning it should only show the logout screen with it false

@@ -24,3 +24,28 @@ DEPENDENCIES FOR FRONTEND:
 2. Installation of React-Redux: Will be the one storing of our datas to the user interfaces
 3. Installation of Axios to use the request from the frontend to the backend or fetching of the request from frontend to backend
 
+DEPLOYMENT FOR BACKEND ON HEROKU APP
+1. create an account on heroku app.com
+2. create a new project name by clicking on create new project
+3. after create the project go back to ur visual studio code and navigate to your backend folder create a new file called 
+    Procfile which will be use in your heroku deployment on command line to let heroku to be able to startup your backend folder
+4. create a gitignore file to ignore your node_modules while deploying or else it will lead to deployment failed because 
+heroku has an inbuilt way of installating dependencies.
+5. in your package.json file add "build: "npm install" which will be use to install your dependencies when heroku is deploying
+6. before starting your deployment go to your heroku app on the browser navigate to your new project click on settings then
+    click on config vars which is an enviromental variable that will use when serving up your application like ur mongodb url
+    heroku doesnot understand it so u will have to add to ur config vars for it to understand
+7. then finally the deployment of your backend so on your heroku app project again click on deploy then copy the deployment
+    steps to ur node terminal but first u must do heroku login and or do this git init, git status, git add ., git commit -m "deployment"
+    then now paste the deploy command which is heroku git:remote -a fashion-blog-backend, then git push heroku master
+8. so done with deployment but before doing anything do heroku logs if u see that the last log was connected to mongodb then
+    congratulations ur backend was successfully deployed but remember when you paste on the url backend on the browser it will 
+    show anything because our backend it been use on postman so instead copy the url to ur postman and add the api which 
+    https://......../api/user/ or whatever so if the api is working fine on your postman then move to your frontend for full 
+    deployment
+9. lastly deployment to github go to github.com, create an account, create a new respository then on your terminal navigate 
+    back to your backend folder and then push it on to github by doing this git init, git status, git add ., git commit -m "deployment",
+    then git push https://github.com/orishameedah/fashionapp.git to push it on to the git respository done.......
+
+DEPLOYMENT OF FRONTEND ON NETLIFY APP 
+1. Go to netlify.app.com create an account
