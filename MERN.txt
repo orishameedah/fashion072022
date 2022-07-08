@@ -49,3 +49,18 @@ heroku has an inbuilt way of installating dependencies.
 
 DEPLOYMENT OF FRONTEND ON NETLIFY APP 
 1. Go to netlify.app.com create an account
+2. click on add new sites on the dropdown you will see import from an existing project so since we have push our blogapp 
+    to github we will choose the it from netlify so after clicking on import from an existing project it would from which 
+    project so click on github after that it will authenticate u and then ask u some qustions
+3. after authenticating successfully u will then have to click on your existing project from github after that u will see
+    some command so type frontend as the base directory, then automatically it will also show frontend/dist it will only 
+    tell u that u can only have eiher sites or dist or public so since build it not there i wlll go back to my vscode and 
+    it frontend/build to frontend/dist because that is the folder that will serve it for us so then done and then click on 
+    deploy sites
+4. now our frontend app but will have issue with our backend api in our frontend so will have to go back to our vscode 
+    change the local backend to the backend url deploy on heroku like https://fashion-blog-backend/api/ into all your 
+    components but then we are not done yet now you have to go to ur sites in the netlify click on site settings and then
+    click on build & deploy now scroll down then u will add enviromental variable now add ur backend url and cloudinary url
+    onto it then go back to click on deploy click on trigger deploy dropdown then click on clear cache and deploy site
+    after that u will see a small board like a terminal which is why the deployment will take place so if the deployment 
+    deploys successfully then ur frontend is ready to be view on the browser done.....
